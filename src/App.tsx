@@ -1,10 +1,10 @@
-import "./App.css";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
     <>
-      <div className="bg-primary h-screen min-w-screen flex flex-col items-center justify-center ">
-        Major Deals
+      <div className="h-screen w-screen">
+        <HomePage />
       </div>
     </>
   );
