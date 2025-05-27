@@ -1,12 +1,14 @@
-import HomePage from "./pages/HomePage";
+import { Route, Routes } from "react-router-dom";
+import { HomePage, AboutPage, Contact, ServicesPage } from "./pages/index";
 
 function App() {
   return (
-    <>
-      <div className="h-screen w-screen">
-        <HomePage />
-      </div>
-    </>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/about" element={<AboutPage />} />
+      <Route path="/services" element={<ServicesPage />} />
+      <Route path="/contacts" element={<Contact />} />
+    </Routes>
   );
 }
 

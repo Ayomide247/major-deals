@@ -1,13 +1,6 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import "swiper/css";
 import { homePartnerData } from "@/lib/utils";
-// import { title } from "process";
 
-type Props = {};
-
-const HomePartnerCard = (props: Props) => {
+const HomePartnerCard = () => {
   return (
     <div className="hidden md:flex items-center justify-center w-full gap-5 ">
       {homePartnerData.map(({ id, bg }) => (

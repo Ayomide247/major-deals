@@ -2,7 +2,8 @@ import { useState } from "react";
 
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 import Logo from "../assets/logo/majorDealsLogo.png";
-import { LogInIcon, Phone, Search } from "lucide-react";
+import { Phone } from "lucide-react";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,54 +31,69 @@ const Navbar = () => {
         </div>
 
         <div
-          className={`absolute top-16 left-0 w-full lg:static lg:flex lg:items-center lg:gap-10 lg:bg-transparent lg:shadow-none  ${
+          className={`absolute top-16 left-0 w-full lg:static lg:flex lg:items-center lg:gap-10 lg:bg-transparent lg:shadow-none transition duration-700 ease-linear ${
             isMenuOpen
-              ? "block shadow-lg bg-pure text-[#ffffff]  py-12 mt-4 transition duration-700 ease-linear"
+              ? "block shadow-lg bg-pure text-[#ffffff]  py-12 mt-2 "
               : "hidden"
           }`}
         >
           <div className="flex flex-col gap-5 text-center lg:flex-row lg:items-center justify-center lg:ml-30 lg:gap-10 lg:text-left  font-semibold">
-            <a
-              href="/"
-              className="transition-colors duration-700 ease-linear cursor-pointer  hover:underline hover:duration-500 hover:text-primary "
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                `transition-colors duration-700 ease-linear cursor-pointer hover:underline hover:text-primary ${
+                  isActive ? "text-primary font-bold underline" : ""
+                }`
+              }
             >
               HOME
-            </a>
-            <a
-              href="/"
-              className="transition-colors duration-700 ease-linear cursor-pointer hover:underline hover:duration-500 hover:text-primary"
+            </NavLink>
+
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                `transition-colors duration-700 ease-linear cursor-pointer hover:underline hover:text-primary ${
+                  isActive ? "text-primary font-bold underline" : ""
+                }`
+              }
             >
               ABOUT
-            </a>
-            <a
-              href="/"
-              className="transition-colors duration-700 ease-linear cursor-pointer hover:underline hover:duration-500 hover:text-primary"
+            </NavLink>
+
+            <NavLink
+              to="/services"
+              className={({ isActive }) =>
+                `transition-colors duration-700 ease-linear cursor-pointer hover:underline hover:text-primary ${
+                  isActive ? "text-primary font-bold underline" : ""
+                }`
+              }
             >
               SERVICES
-            </a>
-            <a
-              href="/"
-              className="transition-colors duration-700 ease-linear cursor-pointer hover:underline hover:duration-500 hover:text-primary"
-            >
-              FAQ
-            </a>
-            <a
-              href="/"
-              className="transition-colors duration-700 ease-linear cursor-pointer hover:underline hover:duration-500 hover:text-primary"
+            </NavLink>
+
+            <NavLink
+              to="/contacts"
+              className={({ isActive }) =>
+                `transition-colors duration-700 ease-linear cursor-pointer hover:underline hover:text-primary ${
+                  isActive ? "text-primary font-bold underline" : ""
+                }`
+              }
             >
               CONTACTS
-            </a>
+            </NavLink>
           </div>
         </div>
 
-        <div className="hidden lg:flex items-center gap-5 font-bold cursor-pointer w-1/2">
+        <Link
+          to="/contacts"
+          className="hidden lg:flex items-center gap-5 font-bold justify-between cursor-pointer w-1/2"
+        >
           <p className="border border-primary/30 py-5  "></p>
-          <Search size={30} />
           <div className="flex items-center justify-center w-[200px] gap-3 bg-primary text-secondary p-5 hover:bg-pure transition duration-500 ease-linear  ">
             <Phone />
             <p>Talk To Us</p>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );

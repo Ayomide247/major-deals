@@ -35,3 +35,24 @@ html,
   -webkit-box-shadow: inset 0 0 6px #c90603;
   background-color: transparent;
 }
+
+@layer utilities {
+  @keyframes bounceTwice {
+    0%,
+    100% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(-25%);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+    75% {
+      transform: translateY(-12%);
+    }
+  }
+
+  .animate-bounceTwice {
+    animation: bounceTwice 1s ease-in-out 1 forwards;
+  }
+}

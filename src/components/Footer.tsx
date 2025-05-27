@@ -87,7 +87,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="border-t mt-10 pt-4 text-center  text-sm flex flex-col lg:flex-row justify-between max-w-7xl mx-auto px-4">
+      <div className="border- bg-pure text-secondary mt-10 pt-4 text-center  text-[1rem] flex flex-col items-center lg:flex-row md:justify-between max-w-7xl mx-auto p-7 px-4">
         <p>
           © 2025 <span className="font-bold text-primary">Major Deals</span>.
           All rights reserved.

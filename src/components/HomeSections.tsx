@@ -1,12 +1,12 @@
-import { branding, cap, landingPage, worldmap } from "@/assets";
+import { branding, worldmap } from "@/assets";
 import HomeSectionCard from "./HomeSectionCard";
 import { homeSectionData } from "@/lib/utils";
 import { banner4 } from "@/assets";
 import { motion } from "framer-motion";
 import AboutInnovationCard from "./HomeInnovationCard";
-import { ArrowRightCircle, Fan, LogIn, Plus } from "lucide-react";
+
 import HomeMissionCard from "./HomeMissionCard";
-import { team1 } from "@/assets";
+
 import HomeSolutionsCard from "./HomeSolutionsCard";
 import HomeOurProjectCard from "./HomeOurProjectCard";
 import HomeTeamCard from "./HomeTeamCard";

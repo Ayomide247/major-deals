@@ -11,17 +11,20 @@ import {
   Eye,
   Handshake,
   Flag,
+  ShieldCheck,
+  Award,
+  Zap,
+  Truck,
+  Wrench,
 } from "lucide-react";
 
 import {
   banner1,
-  banner2,
   banner5,
   banner6,
   features1,
   branding,
   rig,
-  tanks2,
   tanks,
   thermometer,
   meter,
@@ -38,8 +41,6 @@ import {
   majorDeal2,
   majorDeal3,
   majorDeal4,
-  majorDeal5,
-  majorDeal6,
   woman1,
   woman2,
   testimonia,
@@ -52,8 +53,6 @@ import {
   partner5,
   landingPage,
   banner4,
-  eco,
-  support,
 } from "@/assets";
 
 export function cn(...inputs: ClassValue[]) {
@@ -81,7 +80,7 @@ const titlesData = [
     title: "Integrity & Reliability",
     subtitle:
       "Rooted in trust and transparency, Major Deals provides dependable energy solutions across Nigeria and beyond. Our operations are guided by integrity, ensuring safe, reliable service that industries and communities can count on.",
-    bg: banner2,
+    bg: banner4,
   },
   {
     id: 3,
@@ -379,3 +378,131 @@ const homePartnerData = [
   },
 ];
 export { homePartnerData };
+
+const aboutTypesData = [
+  {
+    id: 1,
+    title: "Power you can trust, Energy you can count on--everyday, everywhere",
+  },
+  {
+    id: 2,
+    title:
+      "Fueling the Future with sustainable energy solutions that make a difference",
+  },
+  {
+    id: 3,
+    title: "Energy for All--Empowering communities, driving progress",
+  },
+];
+
+export { aboutTypesData };
+
+export const aboutCardData: CardData[] = [
+  {
+    id: 1,
+    title: "Delivering Work Safely",
+    subtitle:
+      "We prioritize safety at every stage, ensuring our work meets the highest standards without compromising health, environment, or integrity.",
+    bg: team2,
+    Icon: ShieldCheck,
+  },
+  {
+    id: 2,
+    title: "Recognized Contractors",
+    subtitle:
+      "Our team comprises certified professionals acknowledged for excellence, reliability, and adherence to global industry standards.",
+    bg: team2,
+    Icon: Award,
+  },
+  {
+    id: 3,
+    title: "Hydro Energy",
+    subtitle:
+      "Harnessing the power of water to deliver clean, sustainable energy solutions that drive progress and protect the environment.",
+    bg: team2,
+    Icon: Zap,
+  },
+];
+
+export const servicesCardData: CardData[] = [
+  {
+    id: 1,
+    title: "Bulk Fuel Supply & Haulage",
+    subtitle:
+      "Reliable supply chain logistics and delivery of petroleum products to commercial clients, industries, and government institutions.",
+    Icon: Truck,
+  },
+  {
+    id: 2,
+    title: "LPG (Cooking Gas) Distribution",
+    subtitle:
+      "Bulk and retail supply of Liquefied Petroleum Gas for homes, businesses, and institutions, promoting cleaner energy adoption.",
+    Icon: Flame,
+  },
+  {
+    id: 3,
+    title: "Environmental & Safety Consultancy",
+    subtitle:
+      "HSE audits, compliance training, spill management, and environmental impact assessments (EIA).",
+    Icon: ShieldCheck,
+  },
+  {
+    id: 4,
+    title: "Community Energy Access Projects",
+    subtitle:
+      "Deployment of sustainable energy systems in rural or underserved areas, driving social and economic empowerment.",
+    Icon: Users,
+  },
+  {
+    id: 5,
+    title: "Oilfield Services & Engineering",
+    subtitle:
+      "Provision of oilfield equipment, maintenance, logistics, EPC (Engineering, Procurement & Construction), and integrated field services.",
+    Icon: Wrench,
+  },
+  {
+    id: 6,
+    title: "Downstream Services",
+    subtitle:
+      "Storage, distribution, and marketing of petroleum products like diesel, petrol (PMS), kerosene, and LPG.",
+    Icon: Fuel,
+  },
+];
+
+const servicesAccordData = [
+  {
+    title: "What types of petroleum products do you supply?",
+    subtitle:
+      "We offer a wide range of quality petroleum products, including diesel (AGO), petrol (PMS), kerosene (DPK), and LPG (cooking gas). Our supply chain is structured to serve industries, commercial entities, and government institutions efficiently.",
+  },
+  {
+    title: "Do you deliver fuel directly to clients?",
+    subtitle:
+      "Yes, we provide bulk fuel haulage and direct delivery services across Nigeria. Our fleet is equipped for safe and timely fuel transport to ensure our clients never run out of essential energy supply.",
+  },
+
+  {
+    title: "What safety standards do you follow in your operations?",
+    subtitle:
+      "Safety is at the core of our operations. We comply with national and international HSE (Health, Safety, and Environment) standards, and conduct regular audits, training, and environmental assessments to safeguard lives, assets, and the environment.",
+  },
+  {
+    title: "Do you offer services in rural or off-grid communities?",
+    subtitle:
+      "Absolutely. Our Community Energy Access Projects are focused on delivering sustainable energy solutions—like solar mini-grids and clean cooking systems—to underserved areas, promoting social and economic empowerment.",
+  },
+
+  {
+    title: "How can I get a quote or partner with Major Deals?",
+    subtitle:
+      "Simply reach out via our contact page, call our customer care line, or email us. We’re always open to new partnerships and can tailor our services to meet your project or supply needs.",
+  },
+
+  {
+    title: "Does Major Deals engage in oilfield engineering and EPC projects?",
+    subtitle:
+      "Yes, we offer a range of oilfield services including engineering, procurement, construction (EPC), maintenance, and logistics. Our technical expertise supports upstream and midstream oil operations across Nigeria.",
+  },
+];
+
+export { servicesAccordData };

@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Typewriter from "typewriter-effect";
-import { PlayCircleIcon } from "lucide-react";
+
 import { titlesData } from "../lib/utils";
+import LearnMoreBtn from "./LearnMoreBtn";
 type Slide = {
   id: number;
   title: string;
@@ -50,7 +51,7 @@ const HeroSlider: React.FC = () => {
       transition={{ duration: 2.5 }}
     >
       <AnimatePresence mode="wait">
-        <div className=" bg-gradient-to-r from-black/85 to-black/50 h-screen w-screen">
+        <div className=" bg-gradient-to-r from-black/75 to-black/50 h-screen w-screen">
           <div>
             <div
               className="flex flex-col items-start gap-5 mt-30  md:mt-50 lg:mt- px-5 lg:px-20 "
@@ -91,34 +92,12 @@ const HeroSlider: React.FC = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.5, duration: 2.5 }}
               >
-                <button className="bg-primary py-3 px-5 md:py-5 md:px-10 font-bold text-secondary hover:bg-pure transition duration-500 ease-linear ">
-                  LEARN MORE
-                </button>
-                <div className="flex items-center gap-3 ">
-                  <PlayCircleIcon size={50} />
-                  <p className="text-[1rem] md:text-[1.5rem]">
-                    How we can help
-                  </p>
-                </div>
+                <LearnMoreBtn />
               </motion.div>
             </div>
           </div>
         </div>
       </AnimatePresence>
-
-      {/* SLIDE ARROWS */}
-      {/* <button
-        onClick={() => paginate(-1)}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 p-3 bg-black/50 hover:bg-black/70 rounded-full text-white z-20"
-      >
-        <ChevronLeft className="w-6 h-6" />
-      </button>
-      <button
-        onClick={() => paginate(1)}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 p-3 bg-black/50 hover:bg-black/70 rounded-full text-white z-20"
-      >
-        <ChevronRight className="w-6 h-6" />
-      </button> */}
     </motion.section>
   );
 };

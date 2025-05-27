@@ -7,7 +7,7 @@ import { homeTestimoniaData } from "@/lib/utils";
 const Testimonials: React.FC = () => {
   return (
     <div className="py-20 px-10">
-      <h2 className="text-[2rem] font-exo font-bold text-center mb-6 text-pure">
+      <h2 className="text-[2rem] font-exo font-bold text-center mb-6 text-pure hover:animate-bounceTwice">
         What Our Clients Say
       </h2>
 
