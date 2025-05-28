@@ -163,8 +163,8 @@ const AboutSections = () => {
           </h1>
           <p className="text-center text-[1rem] lg:w-1/2">
             They are our expert leaders who work hard night and day to grow our
-            business worldwide and keep the erdunt at the highest position in
-            the world.
+            business worldwide and keep the Major Deal at the highest position
+            in the world.
           </p>
         </div>
         <div className="">

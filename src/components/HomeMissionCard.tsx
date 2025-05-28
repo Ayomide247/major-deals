@@ -1,6 +1,5 @@
 import React from "react";
 import { homeMisionData } from "@/lib/utils";
-import { Plus } from "lucide-react";
 
 const HomeMissionCard: React.FC = () => {
   return (
@@ -8,7 +7,7 @@ const HomeMissionCard: React.FC = () => {
       {homeMisionData.map(({ id, title, subtitle, Icon }) => (
         <div
           key={id}
-          className="group relative flex flex-col items-center bg-slate-200 hover:bg-primary transition duration-1000 ease-linear"
+          className="group relative flex flex-col items-center bg-slate-200 hover:bg-primary transition duration-1000 ease-linear pb-10"
         >
           <div className="absolute -top-20 w-30 h-30 flex items-center justify-center rounded-full m-5 bg-white">
             <div className="w-26 h-26 flex items-center justify-center rounded-full border-2 border-gray-200 text-pure bg-white group-hover:scale-125 transition duration-700 ease-linear">
@@ -18,9 +17,6 @@ const HomeMissionCard: React.FC = () => {
           <div className="flex flex-col items-center gap-10 mt-30 p-5 group-hover:text-white">
             <h3 className="font-exo font-bold text-[2rem]">{title}</h3>
             <p className="text-center text-[1.125rem]">{subtitle}</p>
-            <div className="bg-white text-pure group-hover:text-white group-hover:bg-pure p-2 group-hover:scale-110 transition duration-700 ease-linear">
-              <Plus size={30} className="cursor-pointer" />
-            </div>
           </div>
         </div>
       ))}

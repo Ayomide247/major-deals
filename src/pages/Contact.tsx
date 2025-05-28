@@ -61,25 +61,25 @@ const Contact = () => {
                     Customer Support
                   </h2>
                   <p className="">
-                    Phone:{" "}
+                    Phone:
                     <a
                       href="tel:9342567850"
-                      className="text-primary hover:underline"
+                      className="text-secondary hover:underline"
                     >
                       (934) 256 7850
                     </a>
                   </p>
                   <p className="">
-                    Email:{" "}
+                    Email:
                     <a
                       href="mailto:support@domainname.com"
-                      className="text-primary hover:underline"
+                      className="text-secondary hover:underline"
                     >
                       support@domainname.com
                     </a>
                   </p>
                 </div>
-                {/* <Pin size={50} /> */}
+
                 {/* </div> */}
               </div>
 

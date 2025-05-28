@@ -16,6 +16,8 @@ import {
   Zap,
   Truck,
   Wrench,
+  FlaskConical,
+  Building2,
 } from "lucide-react";
 
 import {
@@ -226,7 +228,7 @@ export const homeOurProjectsData: CardData[] = [
     title: "Whearhouse Support",
     subtitle: "Major Deals now giving the whearhouse support around the world",
     bg: tanks,
-    Icon: Handshake,
+    Icon: Truck,
   },
   {
     id: 2,
@@ -234,7 +236,7 @@ export const homeOurProjectsData: CardData[] = [
     subtitle:
       "We are running a projects that handles chemical safely and securely.",
     bg: drum,
-    Icon: Handshake,
+    Icon: FlaskConical,
   },
   {
     id: 3,
@@ -242,7 +244,7 @@ export const homeOurProjectsData: CardData[] = [
     subtitle:
       "We are living the connection economy and enter the industrial economy",
     bg: branding,
-    Icon: Handshake,
+    Icon: Building2,
   },
 ];
 

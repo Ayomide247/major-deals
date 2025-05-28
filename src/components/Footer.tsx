@@ -9,6 +9,7 @@ import {
   FaMapMarkerAlt,
 } from "react-icons/fa";
 import logo from "../assets/logo/majorDealsLogo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -49,12 +50,15 @@ const Footer = () => {
             About Major Deals
           </h4>
           <ul className="space-y-2 ">
-            <li className="cursor-pointer">• About Us</li>
-            <li className="cursor-pointer">• Faqs</li>
-            <li className="cursor-pointer">• Our Team</li>
-            <li className="cursor-pointer">• Testimonials</li>
-            <li className="cursor-pointer">• News List View</li>
-            <li className="cursor-pointer">• Contact</li>
+            <Link to="/">
+              <li className="cursor-pointer">• Home</li>
+            </Link>
+            <Link to="about">
+              <li className="cursor-pointer">• About Us</li>
+            </Link>
+            <Link to="contacts">
+              <li className="cursor-pointer">• Contact</li>
+            </Link>
           </ul>
         </div>
 
@@ -65,19 +69,19 @@ const Footer = () => {
           <ul className="space-y-3 ">
             <li className="flex items-center gap-2">
               <FaPhoneAlt className="text-primary" />
-              <span>+1-(934)-256-7850</span>
+              <span>(934) 256 7850</span>
             </li>
             <li className="flex items-center gap-2">
               <FaMapMarkerAlt className="text-primary" />
               <span>
-                950 Alpaca, Virginia
+                Km 89, Uyo/Oron Road,
                 <br />
-                32809 - United States
+                Oron LGA, Akwa Ibom State
               </span>
             </li>
             <li className="flex items-center gap-2">
               <FaEnvelope className="text-primary" />
-              <span>info@example.com</span>
+              <span>majordeals.org</span>
             </li>
             <li className="flex items-center gap-2">
               <FaClock className="text-primary" />
@@ -89,8 +93,9 @@ const Footer = () => {
 
       <div className="border- bg-pure text-secondary mt-10 pt-4 text-center  text-[1rem] flex flex-col items-center lg:flex-row md:justify-between max-w-7xl mx-auto p-7 px-4">
         <p>
-          © 2025 <span className="font-bold text-primary">Major Deals</span>.
-          All rights reserved.
+          &copy; {new Date().getFullYear()}{" "}
+          <span className="font-bold text-primary">Major Deals</span>. All
+          rights reserved.
         </p>
         <div className="flex items-center gap-5">
           <h4 className="font-bold ">Connect With Us</h4>
