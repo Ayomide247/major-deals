@@ -1,6 +1,4 @@
 import { homeSolutionsData } from "@/lib/utils";
-import { LogIn } from "lucide-react";
-import { Link } from "react-router-dom";
 
 const HomeSolutionsCard = () => {
   return (
@@ -17,10 +15,6 @@ const HomeSolutionsCard = () => {
           />
           <h3 className="text-[1.5rem] font-exo font-bold">{title}</h3>
           <p className="text-[1.1rem]  ">{subtitle}</p>
-          {/* <Link to="/about" className="flex gap-4">
-            <LogIn size={25} />
-            <p className="text-[1rem] text-primary font-semibold">READ MORE</p>
-          </Link> */}
         </div>
       ))}
     </>
